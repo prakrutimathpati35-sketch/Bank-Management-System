@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Create Bank Account</title>
+</head>
+
+<body style="
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+">
+
+    <div style="
+        width: 430px;
+        background: white;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    ">
+
+        <!-- Heading -->
+
+        <div style="
+            text-align: center;
+            margin-bottom: 30px;
+        ">
+
+            <div style="
+                width: 70px;
+                height: 70px;
+                margin: 0 auto 15px;
+                border-radius: 50%;
+                background: linear-gradient(135deg, #1565c0, #42a5f5);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 32px;
+            ">
+                🏦
+            </div>
+
+            <h1 style="
+                margin: 0;
+                color: #0d47a1;
+                font-size: 28px;
+            ">
+                Create Account
+            </h1>
+
+            <p style="
+                color: #777;
+                font-size: 14px;
+                margin-top: 8px;
+            ">
+                Register for your bank account
+            </p>
+
+        </div>
+
+
+        <!-- Signup Form -->
+
+        <form action="SignupServ" method="post">
+
+            <!-- Name -->
+
+            <label style="
+                display: block;
+                margin-bottom: 7px;
+                color: #333;
+                font-weight: bold;
+                font-size: 14px;
+            ">
+                Full Name
+            </label>
+
+            <input type="text"
+                   name="name"
+                   placeholder="Enter your full name"
+                   required
+                   style="
+                       width: 100%;
+                       padding: 13px;
+                       margin-bottom: 18px;
+                       border: 1px solid #ccc;
+                       border-radius: 8px;
+                       box-sizing: border-box;
+                       font-size: 14px;
+                   ">
+
+
+            <!-- Email -->
+
+            <label style="
+                display: block;
+                margin-bottom: 7px;
+                color: #333;
+                font-weight: bold;
+                font-size: 14px;
+            ">
+                Email
+            </label>
+
+            <input type="email"
+                   name="email"
+                   placeholder="Enter your email"
+                   required
+                   style="
+                       width: 100%;
+                       padding: 13px;
+                       margin-bottom: 18px;
+                       border: 1px solid #ccc;
+                       border-radius: 8px;
+                       box-sizing: border-box;
+                       font-size: 14px;
+                   ">
+
+
+            <!-- Phone -->
+
+            <label style="
+                display: block;
+                margin-bottom: 7px;
+                color: #333;
+                font-weight: bold;
+                font-size: 14px;
+            ">
+                Phone Number
+            </label>
+
+            <input type="tel"
+                   name="phone"
+                   placeholder="Enter 10 digit phone number"
+                   pattern="[0-9]{10}"
+                   maxlength="10"
+                   required
+                   style="
+                       width: 100%;
+                       padding: 13px;
+                       margin-bottom: 18px;
+                       border: 1px solid #ccc;
+                       border-radius: 8px;
+                       box-sizing: border-box;
+                       font-size: 14px;
+                   ">
+
+
+            <!-- Password -->
+
+            <label style="
+                display: block;
+                margin-bottom: 7px;
+                color: #333;
+                font-weight: bold;
+                font-size: 14px;
+            ">
+                Password
+            </label>
+
+            <input type="password"
+                   name="password"
+                   placeholder="Create a password"
+                   minlength="4"
+                   required
+                   style="
+                       width: 100%;
+                       padding: 13px;
+                       margin-bottom: 25px;
+                       border: 1px solid #ccc;
+                       border-radius: 8px;
+                       box-sizing: border-box;
+                       font-size: 14px;
+                   ">
+
+
+            <!-- Submit Button -->
+
+            <button type="submit"
+                    style="
+                        width: 100%;
+                        padding: 14px;
+                        border: none;
+                        border-radius: 8px;
+                        background: linear-gradient(
+                            135deg,
+                            #1565c0,
+                            #1976d2
+                        );
+                        color: white;
+                        font-size: 16px;
+                        font-weight: bold;
+                        cursor: pointer;
+                    ">
+                Create Account
+            </button>
+
+        </form>
+
+
+        <!-- Login Link -->
+
+        <p style="
+            text-align: center;
+            margin-top: 25px;
+            color: #777;
+            font-size: 14px;
+        ">
+
+            Already have an account?
+
+            <a href="login.html"
+               style="
+                   color: #1565c0;
+                   text-decoration: none;
+                   font-weight: bold;
+               ">
+                Login
+            </a>
+
+        </p>
+
+
+        <!-- Back to Home -->
+
+        <div style="
+            text-align: center;
+            margin-top: 15px;
+        ">
+
+            <a href="index.html"
+               style="
+                   color: #777;
+                   text-decoration: none;
+                   font-size: 13px;
+               ">
+                ← Back to Home
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
